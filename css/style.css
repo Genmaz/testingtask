@@ -1,0 +1,407 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	min-width: 800px;
+	min-height: 600px;
+	max-width: 1800px;
+	font-family: Arial;
+}
+
+/* FIRST SECTION */
+
+
+.firstsection, .twosection, .threesection{
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.firstsecimg{
+	background: url(../img/sectionone.png) no-repeat top right;
+	background-size: auto 100%;	
+}
+
+.twosecimg{
+	background: url(../img/sectiontwo.png) no-repeat top right;
+	background-size: auto 100%;
+}
+
+.threesecimg{
+	background: url(../img/sectionthree.png) no-repeat top right;
+	background-size: auto 100%;
+}
+
+.sectionname{
+	color: white;
+	font: bold 35px Georgia;
+	text-transform: uppercase;
+	line-height: 1;
+	position: absolute;
+	left: 45px;
+	top: 50px;;
+}
+
+.sectionname span{
+	font-size: 30px;
+}
+
+.language{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 50px;
+	margin-right: 50px;
+	z-index: 999;
+	position: relative;
+	overflow: hidden;
+	position: fixed;
+}
+
+.language li{
+	float: left;
+	margin: 0 7px;
+}
+
+.language li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	display: block;
+	font-size: 14px 
+}
+
+.language li a:hover{
+	color: #c99d4c;
+}
+
+#navigation{
+	position: absolute;
+	top: 50px;
+	left: center;
+	z-index: 999;
+	width: 100%;
+	display: none;
+}
+
+#navigation ul{
+	display: table;
+	margin: 0 auto;
+}
+
+#navigation ul li{
+	display: table-cell;
+	padding: 0 7px;
+}
+
+#navigation ul li a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+#navigation ul li:hover, #navigation ul li a:hover{
+	color: #c99d4c;
+}
+
+.language .activ, .language .activ  a{
+	color: #c99d4c;
+}
+
+.firstsecimg .phone{
+	position: absolute;
+	left: 58px;
+	bottom: 50px;
+	color: #c99d4c;
+	font-size: 16px;
+	z-index: 99;
+}
+
+.phone{
+	color: #c99d4c;
+	font-size: 16px;
+	z-index: 99;
+}
+
+.phone i{
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	top: 2px;
+	left: -18px;
+	background: url(../img/phone.png) no-repeat left center;
+}
+
+.nextlink{
+	position: absolute;
+	bottom: 0;
+	height: 11%;
+	width: 100%;
+}
+
+.nextlink a{
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+	width: 200px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	position: relative;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.nextlink a i{
+	position: absolute;
+	width: 16px;
+	height: 9px;
+	top: 50%;
+	left: 50%;
+	margin-top: -4px;
+	margin-left: -8px;
+	background: url(../img/strelka.png) no-repeat;
+}
+
+.nextlink a:hover{
+	color: #c99d4c;
+}
+
+.contentwrapper{
+	display: table;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	margin-left: 260px;
+	color: white;
+	width: 40%;
+}
+
+.firstcontent, .twocontent, .threecontent{
+	display: table-cell;
+	vertical-align: middle;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.firstcontent h1{
+	color: #c99d4c;
+	font: bold 40px Georgia;
+	margin-bottom: 70px;
+}
+
+.twocontent h1{
+	color: #c99d4c;
+	font: bold 30px Georgia;
+	margin-bottom: 70px;
+}
+
+.firstcontent p{
+	font-size: 16px;
+	margin-bottom: 70px;
+	font-family: Arial;
+}
+
+.twocontent p{
+	font-size: 16px;
+	margin-bottom: 35px;
+}
+
+.twocontent p span{
+	color: #9d9d9d;
+}
+
+.loadprice, .callbackbtn{
+	background: none;
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	border: 1px solid #d2a450;
+	padding: 15px 0;
+	position: relative;
+	width: 322px;
+}
+
+.loadprice i{
+	position: absolute;
+	top: 15px;
+	left: 50px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/folder.png) no-repeat;
+}
+
+.loadprice:hover, .callbackbtn:hover{
+	background-color: white;
+	color: #d2a450;
+	cursor: pointer;
+}
+
+.callback{
+	float: left;
+	width: calc(50% - 40px);
+	min-width: 325px;
+	margin-bottom: 35px;
+}
+
+.callback header, .contact header{
+	color: #c99d4c;
+	font: bold 30px Georgia;
+	margin-bottom: 35px;
+}
+
+.callback input.field{
+	background: none;
+	border: none;
+	border-bottom: 1px solid #674c29;
+	width: 325px;
+	padding: 7px 0;
+	margin-bottom: 35px;
+	color: white;
+	font-size: 16px;
+}
+
+.callback input::-webkit-input-placeholder{
+	color: white;
+	font-size: 16px;
+}
+.callback input::-moz-placeholder{
+	color: white;
+	font-size: 16px;
+} 
+.callback input:-ms-input-placeholder{
+	color: white;
+	font-size: 16px;
+}
+
+.callback div{
+	margin-bottom: 35px;
+}
+
+.callback div p{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.callback div textarea{
+	background: none;
+	border: none;
+	border-bottom: 1px solid #674c29;
+	width: 100%;
+	color: white;
+	font-size: 16px;
+	resize:none;
+}
+
+.contact{
+	float: right;
+	width: calc(50% - 40px);
+	min-width: 325px;
+}
+
+.threesection .contentwrapper{
+	width: 60%;
+}
+
+.contact ul li{
+	margin-bottom: 20px;
+	font-size: 16px;
+	position: relative;
+	padding-left: 30px;
+}
+
+.contact ul li a{
+	font-size: 16px;
+	color: #876835;
+}
+
+.contact .phone i{
+	left: 2px;
+}
+
+.contact .adress i{
+	position: absolute;
+	background: url(../img/hause.png) no-repeat;
+	height: 14px;
+	width: 17px;
+	top: 50%;
+	margin-top: -7px;
+	left: 0;
+}
+
+.contact .mail i{
+	position: absolute;
+	background: url(../img/mail.png) no-repeat;
+	height: 12px;
+	width: 15px;
+	top: 50%;
+	margin-top: -6px;
+	left: 1px;
+}
+
+.contact .mail a:hover{
+	color: white;
+	text-decoration: none;
+	
+}
+
+.map{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.map img{
+	width: 100%;
+}
